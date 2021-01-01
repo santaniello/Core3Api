@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Extensions.WebEncoders.Testing;
 
 namespace Core3Api.Services
 {
@@ -6,7 +7,8 @@ namespace Core3Api.Services
     {
         public string GetMessage()
         {
-            return Environment.GetEnvironmentVariable("message");
+            //return Environment.GetEnvironmentVariable("message");
+            return "teste";
         }
     }
 }

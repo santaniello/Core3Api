@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: core3api
+  name: core3api
+spec:
+  clusterIP: 10.99.31.148
+  clusterIPs:
+    - 10.99.31.148
+  externalTrafficPolicy: Cluster
+  ports:
+    - nodePort: 30704
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: core3api
+  sessionAffinity: None
+  type: NodePort
