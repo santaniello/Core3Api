@@ -21,7 +21,7 @@ spec:
         app: core3api
     spec:
       containers:
-        - image: core3api:15
+        - image: core3api:106.0
           volumeMounts:
             - name: config-volume
               mountPath: /app/config
